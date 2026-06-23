@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-sale=1.0">
-    <title>SAEPSaude</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href = "css/styles.css">
-</head>
-<body>
-    <div class = "app-container">
-        <aside class = "sidebar">
-            <div class = "profile-section">
-                <img id = "profile-img" src = "assets/logo_saepsaude/SAEPSaude.png" alt = "Profile" class = "profile-image">
-                <h2 id = "profile-name">SAEPSaude</h2id></h2>
-                <div class = "stats">
-                    <div class = "stat-box"><span id = " total-activities" class = "stat-number">0</span><span class = "stat-label">Qtd. Atividades</span></div>
-                    <div class = "stat-box"><span id = "total-calories" class = "stat-number">0</span><span class = "stat-label">Qtd. Calorias</span></div>
-                </div>
-                 <button id="btn-create-activity" class="btn-create">Criar Atividade</button>
-            </div>
-        </aside>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashSaúde</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-app">
+      <aside class="barra-lateral">
+        <div class="secao-perfil">
+          <img
+            id="imagem-perfil"
+            src="assets/imagem-perfil/doge.png"
+            alt="perfil"
+            class="imagem-perfil"
+          />
+          <h2 id="nome-perfil">DashSaúde</h2>
 
-         <main class="main-content">
-            <header class="main-header">
-                <button id="btn-auth" class="btn-login">Login</button>
-            </header>
-
-             <div class="filters">
-                <button class="filter-btn" data-type="corrida">Corrida</button>
-                <button class="filter-btn" data-type="caminhada">Caminhada</button>
-                <button class="filter-btn" data-type="trilha">Trilha</button>
+          <div class="estatisticas">
+            <div class="caixa-estatistica">
+              <span id="total-atividades" class="numero-estatistica">0</span>
+              <span class="rotulo-estatistica">Qtd. Atividades</span>
             </div>
-         </main>
+            <div class="caixa-estatistica">
+              <span id="total-calorias" class="numero-estatistica">0</span>
+              <span class="rotulo-estatistica">Qtd. Calorias</span>
+            </div>
+          </div>
+          <button id="botao-criar-atividade" class="botao-criar" disabled>
+            <img src="assets/progresso/progresso.svg" alt="progress" />Atividade
+          </button>
+        </div>
+        <footer class="rodape-lateral">
+          <p>DashSaude</p>
+          <div class="icones-sociais">
+            <img src="assets/icones-sociais/instagram.svg" />
+            <img src="assets/icones-sociais/tiktok.svg" />
+            <img src="assets/icones-sociais/twitter.svg" />
+          </div>
+          <p class="direitos-autorais">Copyright - 2026</p>
+        </footer>
+      </aside>
+
+      <!--Comentário-->
+      <main class="conteudo-principal">
+        <header class="cabecalho-principal">
+          <button id="botao-autentificacao" class="botao-login">Login</button>
+        </header>
+
+        <div class="filtros">
+          <button class="botao-filtro" data-tipo="corrida">Corrida</button>
+          <button class="botao-filtro" data-tipo="caminhada">Caminhada</button>
+          <button class="botao-filtro" data-tipo="trilha">Trilha</button>
+        </div>
+      </main>
     </div>
-    <script src = "js/app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
